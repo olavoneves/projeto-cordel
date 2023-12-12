@@ -45,12 +45,14 @@ header {
     background-color: black;
     color: white;
     text-align: center;
+    box-shadow: inset 6px 6px 13px 6px rgba(0, 0, 0, 0.789);
 }
 
 header > h1 {
     font-family: var(--fonte1);
     font-size: 9vw;
     padding: 30px;
+    color: rgb(154, 77, 77);
 }
 
 p.autor {
@@ -61,15 +63,16 @@ p.autor {
 }
 
 header a {
-    color: rgb(0, 0, 0);
+    color: white;
     text-decoration: none;
     font-weight: bolder;
-    background-color: white;
+    background-color: black;
     padding: 10px;
 }
 
 header a:hover {
     text-decoration: underline;
+    color: rgb(154, 77, 77);
 }
 
 section {
@@ -78,7 +81,11 @@ section {
     line-height: 2em;
     padding-left: 35px;
     font-size: 3vw;
-    font-weight: bold;
+    font-weight: 500;
+}
+
+section > p {
+    padding-bottom: 2em;
 }
 
 section.normal {
@@ -87,15 +94,42 @@ section.normal {
 }
 
 section.imagem > p {
-    background-color: rgba(255, 255, 255, 0.815);
-    color: black;
+    background-color: rgba(0, 0, 0, 0.353);
+    color: white;
     display: inline-block;
     padding: 5px;
+    text-shadow: 1.5px 1.5px 0px black;
 }
 
 section.imagem {
     background-color: rgba(0, 0, 0, 0.77);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.742);
+}
+
+header#img01 {
+    background-image: url('../imagens/nick-night-FsmPtlaaud8-unsplash.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section#img02 {
+    background-image: url('../imagens/aliis-sinisalu-yzVxz_OYVxU-unsplash.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section#img03 {
+    background-image: url('../imagens/background002.jpg');
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section#final {
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.871);
 }
 
 footer {
@@ -106,13 +140,18 @@ footer {
 }
 
 footer a {
+    box-shadow: inset 6px 6px 13px 6px rgba(0, 0, 0, 0.786);
     font-family: var(--fonte3);
     font-size: 1.4em;
     text-decoration: none;
     font-weight: bolder;
-    color: rgb(205, 192, 192);
+    color: white;
 }
 
 footer a:hover {
     text-decoration: underline;
+}
+
+footer a:active {
+    color: rgb(154, 77, 77);
 }
