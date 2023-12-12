@@ -2,12 +2,32 @@
 
 @font-face {
     font-family: 'Cordelina';
-    src: url('../fontes/cordelina.otf') format(opentype);
+    src: url('../fontes/cordelina.otf') format('opentype');
 }
 
 @font-face {
     font-family: 'Sertao';
-    src: url('../fontes/Carnevalee\ Freakshow.ttf') format(truetype);
+    src: url('../fontes/Carnevalee\ Freakshow.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Retro';
+    src: url('../fontes/FulldayDemoSemibold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Passion One';
+    src: url('../fontes/PassionOne-Regular.ttf') format('truetype');
+}
+
+@import url('https://fonts.googleapis.com/css2? family= Shantell+Sans & display=swap');
+
+:root {
+    --fonte1: 'Cordelina';
+    --fonte2: 'Shantell Sans', cursive;
+    --fonte3: 'Sertao';
+    --fonte4: 'Retro';
+    --fonte5: 'Passion One';
 }
 
 * {
@@ -18,6 +38,7 @@
 html, body {
     min-height: 100vh;
     background-color: darkgray;
+    font-family: var(--fonte2);
 }
 
 header {
@@ -27,20 +48,24 @@ header {
 }
 
 header > h1 {
-    font-family: 'Cordelina';
+    font-family: var(--fonte1);
+    font-size: 9vw;
     padding: 30px;
 }
 
 p.autor {
     text-align: right;
-    font-family: 'Sertao';
+    font-family: var(--fonte4);
+    font-size: 3.5vw;
     padding-bottom: 30px;
 }
 
 header a {
-    color: rgb(205, 192, 192);
+    color: rgb(0, 0, 0);
     text-decoration: none;
     font-weight: bolder;
+    background-color: white;
+    padding: 10px;
 }
 
 header a:hover {
@@ -52,6 +77,8 @@ section {
     padding-bottom: 10%;
     line-height: 2em;
     padding-left: 35px;
+    font-size: 3vw;
+    font-weight: bold;
 }
 
 section.normal {
@@ -62,7 +89,8 @@ section.normal {
 section.imagem > p {
     background-color: rgba(255, 255, 255, 0.815);
     color: black;
-    width: 400px;
+    display: inline-block;
+    padding: 5px;
 }
 
 section.imagem {
@@ -78,7 +106,8 @@ footer {
 }
 
 footer a {
-    font-family: 'Cordelina';
+    font-family: var(--fonte3);
+    font-size: 1.4em;
     text-decoration: none;
     font-weight: bolder;
     color: rgb(205, 192, 192);
