@@ -42,17 +42,26 @@ html, body {
 }
 
 header {
+    padding: 100px;
     background-color: black;
     color: white;
     text-align: center;
     box-shadow: inset 6px 6px 13px 6px rgba(0, 0, 0, 0.789);
 }
 
-header > h1 {
+h1 {
+    background-color: white;
     font-family: var(--fonte1);
     font-size: 9vw;
     padding: 30px;
-    color: rgb(154, 77, 77);
+    color: black;
+    text-align: center;
+}
+
+h1:hover {
+    background-color: black;
+    color: white;
+    transition-duration: 2s;
 }
 
 p.autor {
