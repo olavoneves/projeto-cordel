@@ -56,12 +56,14 @@ h1 {
     padding: 30px;
     color: black;
     text-align: center;
+    position: sticky;
+    top: -1px;
 }
 
 h1:hover {
     background-color: black;
     color: white;
-    transition-duration: 2s;
+    transition-duration: 1s;
 }
 
 p.autor {
